@@ -10,7 +10,8 @@ function indexAction(): void
         [
             '/css/vars.css',
             '/css/modal.css',
-            '/css/index.css'
+            '/css/index.css',
+            '/css/product.css'
         ];
     $jsFiles =
         [

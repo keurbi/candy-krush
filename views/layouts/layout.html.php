@@ -16,23 +16,29 @@
 </head>
 
 <body>
+    <header>
+        <nav>
+            <img src="" alt="Candy Krush">
+            <input type="text">
+            <select name="" id="">
+                <option value="">Bonbons piquants</option>
+                <option value="">Boissons</option>
+                <option value="">Bonbons fruits</option>
+            </select>
+        </nav>
+    </header>
 
-    <div class="grid-container">
-        <!-- Header  -->
-        <header></header>
-
-        <!-- Main -->
-        <main class="main-container">
-            <div class="main-body">
-                <?php if (!empty($template)) {
-                    require_once $template;
-                } else {
-                    echo "Erreur : le template principal n'est pas défini.";
-                }
-                ?>
-            </div>
-        </main>
-    </div>
+    <!-- Main -->
+    <main class="main-container">
+        <div class="main-body">
+            <?php if (!empty($template)) {
+                require_once $template;
+            } else {
+                echo "Erreur : le template principal n'est pas défini.";
+            }
+            ?>
+        </div>
+    </main>
 
     <?php if (isset($jsFiles) && is_array($jsFiles)) { ?>
         <?php foreach ($jsFiles as $jsFile) { ?>
@@ -41,5 +47,10 @@
     <?php } ?>
     <script src="/js/burger-menu.js"></script>
 </body>
+<footer>
+    <a href="http://"></a>
+    <a href="http://"></a>
+    <a href="http://"></a>
+</footer>
 
 </html>
