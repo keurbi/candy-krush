@@ -1,0 +1,25 @@
+:root {
+  --primary-color: #f2f2f2;
+  --secondary-color: #d583f2;
+  --background-color: #454545;
+  --content-color: #303030;
+  --card-color: #d9d9d9;
+  --button-background: #e74c3c;
+  --button-text: #fff;
+}
+
+@font-face {
+  font-family: "Franklin";
+  src: url(../fonts/Libre_Franklin/LibreFranklin-Italic-VariableFont_wght.ttf);
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: "Franklin, sans-serif";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
