@@ -1,24 +1,22 @@
 <?php
+require_once ROOT_PATH . 'models/product.manager.php';
 
-// Fonction pour afficher et ajouter une formation
 function indexAction(): void
 {
-    require_once '../models/product.manager.php';
-
     $formations = getAllProducts();
-    $cssFiles =
-        [
-            '/css/vars.css',
-            '/css/modal.css',
-            '/css/index.css',
-            '/css/product.css'
-        ];
-    $jsFiles =
-        [
-            '/js/modal-delete-verify.js',
-            '/js/formation.js'
-        ];
 
-    $template = "../views/index.html.php";
-    require "../views/layouts/layout.html.php";
+    $cssFiles = [
+        '/css/layout-style.css',
+        '/css/index.css'
+    ];
+    $jsFiles = [
+        '/js/modaldelete.js'
+    ];
+
+    $template = ROOT_PATH . 'views/index.html.php'; // Assurez-vous que ce chemin est correct
+    if (file_exists($template)) {
+        require ROOT_PATH . 'views/layouts/layout.html.php';
+    } else {
+        echo "Erreur : le fichier template spécifié n'existe pas. Chemin : " . htmlspecialchars($template, ENT_QUOTES, 'UTF-8');
+    }
 }
