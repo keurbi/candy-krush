@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 <body>
     <header>
         <nav>
-            <img src="/img/logo.png" alt="Candy Krush">
+            <img src="/img/logo.svg" alt="Candy Krush">
             <input type="text" placeholder="Cherchez et trouvez votre plaisir parmi nos produits">
             <select name="" id="">
                 <option value="">Bonbons piquants</option>

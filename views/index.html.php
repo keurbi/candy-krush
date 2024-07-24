@@ -60,4 +60,5 @@
         <img src="/img/21701294-gomme-carré-coloré-ou-des-bonbons-fond.jpg" alt="bonbon" class="productImg">
         <span>Product Description 15</span>
     </div>
+    <span class="page"> 1 - 2 - 3 - 4 ... 10</span>
 </div>
